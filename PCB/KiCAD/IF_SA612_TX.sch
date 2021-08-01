@@ -30,11 +30,8 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
-LIBS:LCSDR
-LIBS:switch_dpst
 LIBS:ftdi
-LIBS:1_9
-LIBS:bfg135
+LIBS:DragonFly
 LIBS:DragonFly-cache
 EELAYER 25 0
 EELAYER END

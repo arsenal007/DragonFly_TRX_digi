@@ -30,11 +30,8 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
-LIBS:LCSDR
-LIBS:switch_dpst
 LIBS:ftdi
-LIBS:1_9
-LIBS:bfg135
+LIBS:DragonFly
 LIBS:DragonFly-cache
 EELAYER 25 0
 EELAYER END
@@ -97,12 +94,12 @@ $EndComp
 $Comp
 L +3.3V #PWR41
 U 1 1 58A03CC8
-P 7250 700
-F 0 "#PWR41" H 7250 550 50  0001 C CNN
-F 1 "+3.3V" V 7250 1000 50  0000 C CNN
-F 2 "" H 7250 700 50  0000 C CNN
-F 3 "" H 7250 700 50  0000 C CNN
-	1    7250 700 
+P 7000 700
+F 0 "#PWR41" H 7000 550 50  0001 C CNN
+F 1 "+3.3V" V 7000 1000 50  0000 C CNN
+F 2 "" H 7000 700 50  0000 C CNN
+F 3 "" H 7000 700 50  0000 C CNN
+	1    7000 700 
 	0    -1   -1   0   
 $EndComp
 $Comp
@@ -471,7 +468,7 @@ Wire Wire Line
 Wire Wire Line
 	8950 1050 8950 700 
 Wire Wire Line
-	7250 700  10550 700 
+	7000 700  10550 700 
 Wire Wire Line
 	10550 700  10550 1350
 Wire Wire Line
@@ -855,4 +852,31 @@ Wire Wire Line
 Connection ~ 2600 1400
 Wire Wire Line
 	4400 2600 3650 2600
+$Comp
+L C_Small C?
+U 1 1 61063DA5
+P 7100 950
+F 0 "C?" H 7200 1000 50  0000 L CNN
+F 1 "100nF" H 7200 900 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 7100 950 50  0001 C CNN
+F 3 "" H 7100 950 50  0000 C CNN
+	1    7100 950 
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 61063FC6
+P 7100 1100
+F 0 "#PWR?" H 7100 850 50  0001 C CNN
+F 1 "GND" H 7100 950 50  0001 C CNN
+F 2 "" H 7100 1100 50  0000 C CNN
+F 3 "" H 7100 1100 50  0000 C CNN
+	1    7100 1100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7100 1100 7100 1050
+Wire Wire Line
+	7100 850  7100 700 
+Connection ~ 7100 700 
 $EndSCHEMATC

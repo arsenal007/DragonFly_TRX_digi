@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name DragonFly)(type KiCad)(uri ${KIPRJMOD}/libs/DragonFly.pretty/)(options "")(descr ""))
+)

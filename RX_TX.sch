@@ -1,0 +1,338 @@
+EESchema Schematic File Version 2
+LIBS:DragonFly-rescue
+LIBS:bee-rescue
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:LCSDR
+LIBS:switch_dpst
+LIBS:ftdi
+LIBS:1_9
+LIBS:bfg135
+LIBS:DragonFly-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 4 6
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L R_Small R11
+U 1 1 58DEEAFF
+P 3900 2700
+F 0 "R11" H 4000 2650 50  0000 L CNN
+F 1 "2.7K" H 4000 2750 50  0000 L CNN
+F 2 "DragonFly:R_1206_0603" H 3900 2700 50  0001 C CNN
+F 3 "" H 3900 2700 50  0000 C CNN
+	1    3900 2700
+	-1   0    0    1   
+$EndComp
+$Comp
+L R_Small R9
+U 1 1 58DEEB06
+P 3900 2400
+F 0 "R9" H 4050 2350 50  0000 L CNN
+F 1 "2.7K" H 4000 2450 50  0000 L CNN
+F 2 "DragonFly:R_1206_0603" H 3900 2400 50  0001 C CNN
+F 3 "" H 3900 2400 50  0000 C CNN
+	1    3900 2400
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3900 2800 3900 2900
+Wire Wire Line
+	3900 2500 3900 2600
+$Comp
+L C_Small C26
+U 1 1 58DEEB15
+P 4250 2300
+F 0 "C26" H 4000 2300 50  0000 L CNN
+F 1 "100nF" H 4000 2400 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 4250 2300 50  0001 C CNN
+F 3 "" H 4250 2300 50  0000 C CNN
+	1    4250 2300
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3900 2550 4650 2550
+Connection ~ 3900 2550
+Wire Wire Line
+	3900 2100 3900 2300
+Wire Wire Line
+	4950 2100 4950 2350
+$Comp
+L R_Small R13
+U 1 1 58DEEB32
+P 4950 3250
+F 0 "R13" H 5050 3200 50  0000 L CNN
+F 1 "4.7K" H 5050 3300 50  0000 L CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" H 4950 3250 50  0001 C CNN
+F 3 "" H 4950 3250 50  0000 C CNN
+	1    4950 3250
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4950 2750 4950 3150
+Connection ~ 4950 2900
+$Comp
+L C_Small C27
+U 1 1 58DEEB44
+P 5300 3250
+F 0 "C27" H 5050 3200 50  0000 L CNN
+F 1 "100nF" H 4950 3300 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 5300 3250 50  0001 C CNN
+F 3 "" H 5300 3250 50  0000 C CNN
+	1    5300 3250
+	-1   0    0    1   
+$EndComp
+$Comp
+L C_Small C30
+U 1 1 58DEEB4B
+P 6750 2350
+F 0 "C30" H 6500 2300 50  0000 L CNN
+F 1 "100nF" H 6400 2400 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 6750 2350 50  0001 C CNN
+F 3 "" H 6750 2350 50  0000 C CNN
+	1    6750 2350
+	-1   0    0    1   
+$EndComp
+$Comp
+L GND #PWR66
+U 1 1 58DEEB52
+P 4950 3500
+F 0 "#PWR66" H 4950 3250 50  0001 C CNN
+F 1 "GND" H 4950 3350 50  0001 C CNN
+F 2 "" H 4950 3500 50  0000 C CNN
+F 3 "" H 4950 3500 50  0000 C CNN
+	1    4950 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR67
+U 1 1 58DEEB58
+P 5300 3500
+F 0 "#PWR67" H 5300 3250 50  0001 C CNN
+F 1 "GND" H 5300 3350 50  0001 C CNN
+F 2 "" H 5300 3500 50  0000 C CNN
+F 3 "" H 5300 3500 50  0000 C CNN
+	1    5300 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L R_Small R15
+U 1 1 58DEEB61
+P 6500 2350
+F 0 "R15" H 6600 2350 50  0000 L CNN
+F 1 "4.7K" H 6600 2450 50  0000 L CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" H 6500 2350 50  0001 C CNN
+F 3 "" H 6500 2350 50  0000 C CNN
+	1    6500 2350
+	-1   0    0    1   
+$EndComp
+Text GLabel 8100 2100 2    50   Output ~ 0
+RX_12V
+Text GLabel 8200 2900 2    50   Output ~ 0
+TX_12V
+Text GLabel 3900 2900 3    50   Input ~ 0
+TX_TRX
+$Comp
+L Q_PMOS_GSD Q3
+U 1 1 60FDE2A1
+P 4850 2550
+F 0 "Q3" H 5150 2400 50  0000 L CNN
+F 1 "SI2301-TP" H 5100 2500 50  0000 L CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23" H 5050 2650 50  0001 C CNN
+F 3 "" H 4850 2550 50  0001 C CNN
+	1    4850 2550
+	1    0    0    1   
+$EndComp
+$Comp
+L +12V #PWR65
+U 1 1 60FDEEDE
+P 3700 2100
+F 0 "#PWR65" H 3700 1950 50  0001 C CNN
+F 1 "+12V" V 3700 2350 50  0000 C CNN
+F 2 "" H 3700 2100 50  0001 C CNN
+F 3 "" H 3700 2100 50  0001 C CNN
+	1    3700 2100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Q_PMOS_GSD Q4
+U 1 1 60FDF008
+P 6000 2200
+F 0 "Q4" V 6400 2100 50  0000 L CNN
+F 1 "SI2301-TP" V 6250 2050 50  0000 L CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23" H 6200 2300 50  0001 C CNN
+F 3 "" H 6000 2200 50  0001 C CNN
+	1    6000 2200
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	6000 2400 6000 3000
+Connection ~ 6000 2900
+Wire Wire Line
+	3700 2100 5800 2100
+Wire Wire Line
+	4250 2200 4250 2100
+Connection ~ 4950 2100
+Wire Wire Line
+	4250 2400 4250 2550
+Connection ~ 4250 2550
+Wire Wire Line
+	6200 2100 8100 2100
+Wire Wire Line
+	6500 2100 6500 2250
+Wire Wire Line
+	6750 2100 6750 2250
+Connection ~ 6500 2100
+$Comp
+L GND #PWR69
+U 1 1 60FDF676
+P 6500 2550
+F 0 "#PWR69" H 6500 2300 50  0001 C CNN
+F 1 "GND" H 6500 2400 50  0001 C CNN
+F 2 "" H 6500 2550 50  0000 C CNN
+F 3 "" H 6500 2550 50  0000 C CNN
+	1    6500 2550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6500 2550 6500 2450
+$Comp
+L GND #PWR70
+U 1 1 60FDF6C5
+P 6750 2550
+F 0 "#PWR70" H 6750 2300 50  0001 C CNN
+F 1 "GND" H 6750 2400 50  0001 C CNN
+F 2 "" H 6750 2550 50  0000 C CNN
+F 3 "" H 6750 2550 50  0000 C CNN
+	1    6750 2550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6750 2550 6750 2450
+Connection ~ 6750 2100
+Connection ~ 4250 2100
+Connection ~ 3900 2100
+Wire Wire Line
+	5300 3500 5300 3350
+Wire Wire Line
+	5300 3150 5300 2900
+Connection ~ 5300 2900
+Wire Wire Line
+	4950 2900 8200 2900
+Wire Wire Line
+	4950 3500 4950 3350
+$Comp
+L LED D6
+U 1 1 610640DD
+P 6000 3450
+F 0 "D6" V 6050 3300 50  0000 C CNN
+F 1 "RED" V 5950 3300 50  0000 C CNN
+F 2 "LEDs:LED_D3.0mm_Horizontal_O3.81mm_Z10.0mm" H 6000 3450 50  0001 C CNN
+F 3 "" H 6000 3450 50  0001 C CNN
+	1    6000 3450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R_Small R32
+U 1 1 610641C2
+P 6000 3100
+F 0 "R32" H 6100 3050 50  0000 L CNN
+F 1 "4.7K" H 6100 3150 50  0000 L CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" H 6000 3100 50  0001 C CNN
+F 3 "" H 6000 3100 50  0000 C CNN
+	1    6000 3100
+	-1   0    0    1   
+$EndComp
+$Comp
+L GND #PWR68
+U 1 1 6106423B
+P 6000 3700
+F 0 "#PWR68" H 6000 3450 50  0001 C CNN
+F 1 "GND" H 6000 3550 50  0001 C CNN
+F 2 "" H 6000 3700 50  0000 C CNN
+F 3 "" H 6000 3700 50  0000 C CNN
+	1    6000 3700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6000 3600 6000 3700
+Wire Wire Line
+	6000 3300 6000 3200
+$Comp
+L R_Small R33
+U 1 1 61064B7A
+P 7650 2250
+F 0 "R33" H 7750 2200 50  0000 L CNN
+F 1 "4.7K" H 7750 2300 50  0000 L CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" H 7650 2250 50  0001 C CNN
+F 3 "" H 7650 2250 50  0000 C CNN
+	1    7650 2250
+	-1   0    0    1   
+$EndComp
+$Comp
+L LED D7
+U 1 1 61064C67
+P 7650 2550
+F 0 "D7" V 7700 2400 50  0000 C CNN
+F 1 "GREEN" V 7600 2350 50  0000 C CNN
+F 2 "LEDs:LED_D3.0mm_Horizontal_O3.81mm_Z10.0mm" H 7650 2550 50  0001 C CNN
+F 3 "" H 7650 2550 50  0001 C CNN
+	1    7650 2550
+	0    -1   -1   0   
+$EndComp
+$Comp
+L GND #PWR71
+U 1 1 61064CD8
+P 7650 2750
+F 0 "#PWR71" H 7650 2500 50  0001 C CNN
+F 1 "GND" H 7650 2600 50  0001 C CNN
+F 2 "" H 7650 2750 50  0000 C CNN
+F 3 "" H 7650 2750 50  0000 C CNN
+	1    7650 2750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7650 2400 7650 2350
+Wire Wire Line
+	7650 2150 7650 2100
+Connection ~ 7650 2100
+Wire Wire Line
+	7650 2700 7650 2750
+$EndSCHEMATC

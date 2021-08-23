@@ -1,9 +1,19 @@
 EESchema-DOCLIB  Version 2.0
 #
+$CMP D_Small
+D Diode, small symbol
+K diode
+$ENDCMP
+#
 $CMP FT232RL
 D USB to Serial Interface, SSOP-28
 K USB Serial
 F http://www.ftdichip.com/Products/ICs/FT232RL.htm
+$ENDCMP
+#
+$CMP R_Small
+D Resistor, small symbol
+K r resistor 
 $ENDCMP
 #
 #End Doc Library

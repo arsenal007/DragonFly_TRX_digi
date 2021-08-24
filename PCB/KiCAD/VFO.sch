@@ -149,9 +149,9 @@ F 3 "" H 200 -2250 60  0001 C CNN
 	1    9700 1250
 	1    0    0    -1  
 $EndComp
-Text GLabel 10750 1150 2    60   Output ~ 0
-BFO_RX
 Text GLabel 10750 1000 2    60   Output ~ 0
+BFO_RX
+Text GLabel 10750 1150 2    60   Output ~ 0
 BFO_TX
 $Comp
 L GND #PWR49

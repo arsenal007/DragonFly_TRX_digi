@@ -1,5 +1,11 @@
 EESchema-DOCLIB  Version 2.0
 #
+$CMP Conn_01x10
+D Generic connector, single row, 01x10
+K connector
+F ~
+$ENDCMP
+#
 $CMP D_Small
 D Diode, small symbol
 K diode

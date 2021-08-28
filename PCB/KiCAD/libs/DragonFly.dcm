@@ -17,6 +17,11 @@ K USB Serial
 F http://www.ftdichip.com/Products/ICs/FT232RL.htm
 $ENDCMP
 #
+$CMP Q_NJFET_DSG
+D Transistor N-JFET (general)
+K njfet n-jfet transistor
+$ENDCMP
+#
 $CMP R_Small
 D Resistor, small symbol
 K r resistor 

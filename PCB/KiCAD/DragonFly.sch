@@ -36,7 +36,7 @@ EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 6
+Sheet 1 7
 Title ""
 Date ""
 Rev ""
@@ -620,25 +620,12 @@ Diode mixer  Z=50R\n
 Wire Wire Line
 	2050 3600 2050 3700
 Connection ~ 2050 3650
-$Comp
-L +12V #PWR1
-U 1 1 60FB2C17
-P 900 4200
-F 0 "#PWR1" H 900 4050 50  0001 C CNN
-F 1 "+12V" V 900 4450 50  0000 C CNN
-F 2 "" H 900 4200 50  0001 C CNN
-F 3 "" H 900 4200 50  0001 C CNN
-	1    900  4200
-	0    -1   -1   0   
-$EndComp
 Wire Wire Line
 	2050 3650 2500 3650
 Wire Wire Line
 	2500 3650 2500 3700
 Wire Wire Line
 	2050 3900 2050 4000
-Wire Wire Line
-	2050 4000 4200 4000
 Wire Wire Line
 	2500 3900 2500 4000
 Connection ~ 2500 4000
@@ -676,30 +663,6 @@ Wire Wire Line
 Wire Wire Line
 	1400 5950 1650 5950
 Connection ~ 1550 5950
-$Comp
-L C_Small C3
-U 1 1 60FB5DF3
-P 1000 4400
-F 0 "C3" H 700 4400 50  0000 L CNN
-F 1 "100nF" H 700 4300 50  0000 L CNN
-F 2 "DragonFly:C_0603_HandSoldering" H 1000 4400 50  0001 C CNN
-F 3 "" H 1000 4400 50  0000 C CNN
-	1    1000 4400
-	1    0    0    -1  
-$EndComp
-$Comp
-L GND #PWR2
-U 1 1 60FB5FB6
-P 1000 4600
-F 0 "#PWR2" H 1000 4350 50  0001 C CNN
-F 1 "GND" H 1000 4450 50  0001 C CNN
-F 2 "" H 1000 4600 50  0000 C CNN
-F 3 "" H 1000 4600 50  0000 C CNN
-	1    1000 4600
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1000 4600 1000 4500
 Wire Wire Line
 	1100 6250 1100 6150
 Wire Wire Line
@@ -820,8 +783,6 @@ Wire Wire Line
 Wire Wire Line
 	4300 4650 4200 4650
 Wire Wire Line
-	4200 4000 4200 4850
-Wire Wire Line
 	4200 4850 4300 4850
 Connection ~ 4200 4650
 Wire Wire Line
@@ -841,10 +802,6 @@ F 3 "" H 1600 4750 50  0001 C CNN
 	1    1600 4750
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	900  4200 1150 4200
-Wire Wire Line
-	1000 4200 1000 4300
 Wire Wire Line
 	1150 4200 1150 4550
 Wire Wire Line
@@ -990,4 +947,12 @@ F 3 "" H 2150 3400 50  0001 C CNN
 	1    2150 3400
 	-1   0    0    1   
 $EndComp
+$Sheet
+S 2850 6050 2400 1300
+U 612BEAB5
+F0 "mixer" 60
+F1 "mixer.sch" 60
+$EndSheet
+Wire Wire Line
+	2050 4000 4200 4000
 $EndSCHEMATC

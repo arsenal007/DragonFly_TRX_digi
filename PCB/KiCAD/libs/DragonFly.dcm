@@ -1,5 +1,15 @@
 EESchema-DOCLIB  Version 2.0
 #
+$CMP CP_Small
+D Polarised capacitor
+K cap capacitor
+$ENDCMP
+#
+$CMP C_Small
+D Unpolarized capacitor
+K capacitor cap
+$ENDCMP
+#
 $CMP Conn_01x10
 D Generic connector, single row, 01x10
 K connector
@@ -17,6 +27,12 @@ K USB Serial
 F http://www.ftdichip.com/Products/ICs/FT232RL.htm
 $ENDCMP
 #
+$CMP NC7SB3157
+D Low-Voltage SPDT Analog Switch or 2:1Multiplexer 
+K SWITCH
+F https://www.fairchildsemi.com/datasheets/NC/NC7SB3157.pdf
+$ENDCMP
+#
 $CMP Q_NJFET_DSG
 D Transistor N-JFET (general)
 K njfet n-jfet transistor
@@ -25,6 +41,11 @@ $ENDCMP
 $CMP R_Small
 D Resistor, small symbol
 K r resistor 
+$ENDCMP
+#
+$CMP Transformer_1P_2S
+D Transformer, single primary, dual secondary
+K transformer coil magnet
 $ENDCMP
 #
 #End Doc Library

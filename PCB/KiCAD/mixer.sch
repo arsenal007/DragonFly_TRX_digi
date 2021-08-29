@@ -1,0 +1,338 @@
+EESchema Schematic File Version 2
+LIBS:DragonFly-rescue
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:ftdi
+LIBS:DragonFly
+LIBS:DragonFly-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 7 7
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Transformer_1P_2S T?
+U 1 1 612C108A
+P 2600 2700
+F 0 "T?" H 2600 3200 50  0000 C CNN
+F 1 "Transformer_1P_2S" H 2250 2200 50  0000 C CNN
+F 2 "" H 2600 2700 50  0001 C CNN
+F 3 "" H 2600 2700 50  0001 C CNN
+	1    2600 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transformer_1P_2S T?
+U 1 1 612C10A4
+P 7800 2700
+F 0 "T?" H 7800 3200 50  0000 C CNN
+F 1 "Transformer_1P_2S" H 7800 2200 50  0000 C CNN
+F 2 "" H 7800 2700 50  0001 C CNN
+F 3 "" H 7800 2700 50  0001 C CNN
+	1    7800 2700
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	4400 2800 7400 2800
+Wire Wire Line
+	4400 2800 4400 2600
+Wire Wire Line
+	4400 2600 3000 2600
+Wire Wire Line
+	3000 2800 3900 2800
+Wire Wire Line
+	3900 2800 3900 2700
+Wire Wire Line
+	3900 2700 6850 2700
+Wire Wire Line
+	6850 2700 6850 2600
+Wire Wire Line
+	6850 2600 7400 2600
+Wire Wire Line
+	6150 2800 6150 4300
+Connection ~ 6150 2800
+Wire Wire Line
+	3000 2300 7400 2300
+Wire Wire Line
+	3000 3100 7400 3100
+Wire Wire Line
+	5750 3100 5750 4100
+Connection ~ 5750 3100
+Wire Wire Line
+	6150 1200 6150 2700
+Connection ~ 6150 2700
+Wire Wire Line
+	5750 1400 5750 2300
+Connection ~ 5750 2300
+Wire Wire Line
+	4850 1600 4850 3900
+Wire Wire Line
+	3250 1200 3250 4000
+Wire Wire Line
+	3250 3850 3850 3850
+Wire Wire Line
+	3850 3850 4550 4300
+Wire Wire Line
+	3700 3650 3000 3650
+Wire Wire Line
+	3700 3650 4550 4100
+Wire Wire Line
+	3700 1400 3700 3650
+$Comp
+L R_Small R?
+U 1 1 612C147C
+P 3500 2100
+F 0 "R?" V 3700 2100 50  0000 L CNN
+F 1 "1.5k" V 3600 2050 50  0000 L CNN
+F 2 "" H 3500 2100 50  0001 C CNN
+F 3 "" H 3500 2100 50  0001 C CNN
+	1    3500 2100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R_Small R?
+U 1 1 612C16B8
+P 4100 3400
+F 0 "R?" V 4300 3400 50  0000 L CNN
+F 1 "3.3K" V 4200 3350 50  0000 L CNN
+F 2 "" H 4100 3400 50  0001 C CNN
+F 3 "" H 4100 3400 50  0001 C CNN
+	1    4100 3400
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3600 2100 3700 2100
+Connection ~ 3700 2100
+Wire Wire Line
+	3400 2100 3250 2100
+Connection ~ 3250 2100
+$Comp
+L R_Small R?
+U 1 1 612C188A
+P 2900 3400
+F 0 "R?" V 3100 3400 50  0000 L CNN
+F 1 "3.3K" V 3000 3350 50  0000 L CNN
+F 2 "" H 2900 3400 50  0001 C CNN
+F 3 "" H 2900 3400 50  0001 C CNN
+	1    2900 3400
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3000 3400 4000 3400
+Connection ~ 3250 3400
+Wire Wire Line
+	4200 3400 4850 3400
+Connection ~ 4850 3400
+$Comp
+L GND #PWR?
+U 1 1 612C19B8
+P 2650 3400
+F 0 "#PWR?" H 2650 3150 50  0001 C CNN
+F 1 "GND" H 2650 3250 50  0000 C CNN
+F 2 "" H 2650 3400 50  0001 C CNN
+F 3 "" H 2650 3400 50  0001 C CNN
+	1    2650 3400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2800 3400 2650 3400
+$Comp
+L NC7SB3157 U?
+U 1 1 612C2543
+P 4850 1300
+F 0 "U?" H 5100 850 50  0000 L CNN
+F 1 "NC7SB3157" H 5050 1000 50  0000 L CNN
+F 2 "" H 4850 1350 50  0001 C CNN
+F 3 "" H 4850 1350 50  0001 C CNN
+	1    4850 1300
+	1    0    0    1   
+$EndComp
+$Comp
+L C_Small C?
+U 1 1 612C2598
+P 3250 4100
+F 0 "C?" H 3350 4150 50  0000 L CNN
+F 1 "100nF" H 3350 4050 50  0000 L CNN
+F 2 "" H 3250 4100 50  0001 C CNN
+F 3 "" H 3250 4100 50  0001 C CNN
+	1    3250 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L CP_Small C?
+U 1 1 612C25D1
+P 3850 4100
+F 0 "C?" H 3950 4150 50  0000 L CNN
+F 1 "10µF" H 3950 4050 50  0000 L CNN
+F 2 "" H 3850 4100 50  0001 C CNN
+F 3 "" H 3850 4100 50  0001 C CNN
+	1    3850 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 612C2607
+P 3850 4250
+F 0 "#PWR?" H 3850 4000 50  0001 C CNN
+F 1 "GND" H 3850 4100 50  0000 C CNN
+F 2 "" H 3850 4250 50  0001 C CNN
+F 3 "" H 3850 4250 50  0001 C CNN
+	1    3850 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 612C262D
+P 3250 4250
+F 0 "#PWR?" H 3250 4000 50  0001 C CNN
+F 1 "GND" H 3250 4100 50  0000 C CNN
+F 2 "" H 3250 4250 50  0001 C CNN
+F 3 "" H 3250 4250 50  0001 C CNN
+	1    3250 4250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3850 4250 3850 4200
+Wire Wire Line
+	3850 3850 3850 4000
+Connection ~ 3850 3850
+Wire Wire Line
+	3250 4250 3250 4200
+Connection ~ 3250 3850
+$Comp
+L NC7SB3157 U?
+U 1 1 612C2C44
+P 4850 4200
+F 0 "U?" H 5100 4650 50  0000 L CNN
+F 1 "NC7SB3157" H 5000 4500 50  0000 L CNN
+F 2 "" H 4850 4250 50  0001 C CNN
+F 3 "" H 4850 4250 50  0001 C CNN
+	1    4850 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_Small C?
+U 1 1 612C2C98
+P 2900 3650
+F 0 "C?" V 2750 3600 50  0000 L CNN
+F 1 "10nF" V 2650 3500 50  0000 L CNN
+F 2 "" H 2900 3650 50  0001 C CNN
+F 3 "" H 2900 3650 50  0001 C CNN
+	1    2900 3650
+	0    -1   -1   0   
+$EndComp
+Connection ~ 3700 3650
+Wire Wire Line
+	2800 3650 2300 3650
+$Comp
+L C_Small C?
+U 1 1 612C2E44
+P 5100 3550
+F 0 "C?" V 5350 3500 50  0000 L CNN
+F 1 "100nF" V 5250 3400 50  0000 L CNN
+F 2 "" H 5100 3550 50  0001 C CNN
+F 3 "" H 5100 3550 50  0001 C CNN
+	1    5100 3550
+	0    -1   -1   0   
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 612C2F5C
+P 5250 3550
+F 0 "#PWR?" H 5250 3300 50  0001 C CNN
+F 1 "GND" H 5250 3400 50  0000 C CNN
+F 2 "" H 5250 3550 50  0001 C CNN
+F 3 "" H 5250 3550 50  0001 C CNN
+	1    5250 3550
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5200 3550 5250 3550
+$Comp
+L C_Small C?
+U 1 1 612C33EF
+P 5100 1850
+F 0 "C?" V 5350 1800 50  0000 L CNN
+F 1 "100nF" V 5250 1700 50  0000 L CNN
+F 2 "" H 5100 1850 50  0001 C CNN
+F 3 "" H 5100 1850 50  0001 C CNN
+	1    5100 1850
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5150 1200 6150 1200
+Wire Wire Line
+	5150 1400 5750 1400
+$Comp
+L GND #PWR?
+U 1 1 612C37A6
+P 5200 1850
+F 0 "#PWR?" H 5200 1600 50  0001 C CNN
+F 1 "GND" H 5200 1700 50  0000 C CNN
+F 2 "" H 5200 1850 50  0001 C CNN
+F 3 "" H 5200 1850 50  0001 C CNN
+	1    5200 1850
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5000 1850 4850 1850
+Connection ~ 4850 1850
+Wire Wire Line
+	4550 1200 3250 1200
+Wire Wire Line
+	3700 1400 4550 1400
+$Comp
+L GND #PWR?
+U 1 1 612C38C3
+P 4850 1000
+F 0 "#PWR?" H 4850 750 50  0001 C CNN
+F 1 "GND" H 4850 850 50  0000 C CNN
+F 2 "" H 4850 1000 50  0001 C CNN
+F 3 "" H 4850 1000 50  0001 C CNN
+	1    4850 1000
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5000 3550 4850 3550
+Connection ~ 4850 3550
+Wire Wire Line
+	6150 4300 5150 4300
+Wire Wire Line
+	5750 4100 5150 4100
+$EndSCHEMATC

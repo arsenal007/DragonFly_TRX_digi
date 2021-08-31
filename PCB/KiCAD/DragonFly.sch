@@ -748,7 +748,7 @@ F 3 "" H 2150 3400 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Sheet
-S 2850 6050 2400 1300
+S 3400 4800 2400 1300
 U 612BEAB5
 F0 "mixer" 60
 F1 "mixer.sch" 60

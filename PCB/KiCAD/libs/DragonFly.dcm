@@ -16,6 +16,11 @@ K connector
 F ~
 $ENDCMP
 #
+$CMP D_Schottky_x2_Serial_AKC
+D Dual schottky diode
+K diode
+$ENDCMP
+#
 $CMP D_Small
 D Diode, small symbol
 K diode

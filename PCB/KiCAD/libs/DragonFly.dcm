@@ -26,6 +26,17 @@ D Diode, small symbol
 K diode
 $ENDCMP
 #
+$CMP FM24C64C
+D FM24C64C-G, 64Kb Serial 5V FRAM Nonvolatile Memory I2C Interface
+K FRAM I2C Serial 5V FRAM Nonvolatile Memory
+$ENDCMP
+#
+$CMP FM24CL16
+D FM24C64B-G, 64Kb Serial 5V FRAM Nonvolatile Memory I2C Interface
+K FRAM I2C Serial 5V FRAM Nonvolatile Memory
+F http://www.cypress.com/?mpn=FM24C64B-G
+$ENDCMP
+#
 $CMP FT232RL
 D USB to Serial Interface, SSOP-28
 K USB Serial

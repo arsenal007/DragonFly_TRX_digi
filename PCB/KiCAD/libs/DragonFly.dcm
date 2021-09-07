@@ -1,5 +1,17 @@
 EESchema-DOCLIB  Version 2.0
 #
+$CMP 2N7002
+D 60V Vds, 0.115A Id, N-channel MOSFET, SOT-23
+K N-Channel Switching MOSFET
+F https://www.fairchildsemi.com/datasheets/2N/2N7002.pdf
+$ENDCMP
+#
+$CMP BSS138
+D 50V Vds, 0.22 A Id, N-channel MOSFET, SOT-23
+K N-Channel MOSFET
+F https://www.fairchildsemi.com/datasheets/BS/BSS138.pdf
+$ENDCMP
+#
 $CMP CP_Small
 D Polarised capacitor
 K cap capacitor
@@ -197,6 +209,12 @@ $CMP MC78L24_TO92
 D Positive 100mA 30V Linear Regulator, Fixed Output 24V, TO-92
 K Voltage Regulator 100mA Positive
 F http://pdf.datasheetcatalog.com/datasheet/vishay/mc78l00.pdf
+$ENDCMP
+#
+$CMP MMBF170
+D 60V Vds, 0.5 A Id, N-channel MOSFET, SOT-23
+K N-Channel MOSFET
+F https://www.diodes.com/assets/Datasheets/ds30104.pdf
 $ENDCMP
 #
 $CMP NC7SB3157
